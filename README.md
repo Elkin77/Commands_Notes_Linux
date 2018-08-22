@@ -99,9 +99,32 @@ print(miLista.index("Ana")) ->indice
 print("pepe" in miLista) - > in, si el elemento se encuentra en la lista.
 miLista.remove("Ana") - > elimina elemento en una lista
 miLista.pop() -> elimina ultimo elemento de la lista
-miLista3 = miLista1 + miLista2 -> Une las listas
+miLista3 = miLista1 + miLista2 -> Une-- las listas
 miLista3 =["elemento1", "elemento2"]*3 -> replica listas
 
 tuplas
 miLista = List(mitupla) - > convertir tupla en lista
 mitupla = tuple(milista) - convertir lista en tupla.
+
+
+----------Comandos Django//
+
+python manage.py rebuild_index --using=default --verbosity=2 --workers=1 --batch-size (solr - sincronizar indices)
+python manage.py update_index --verbosity=2 --using=default --workers=1 --batch-size=1000 --start="2018-08-20 09:40:30" --end="2018-08-22 14:50:10" 
+python manage.py update_index --verbosity=2 --using=default --workers=1 --age=5 
+python manage.py update_index --verbosity=2 --using=default --workers=1 
+
+python manage.py collectstatic
+
+
+	--- http://127.0.0.1:8983/solr/#/
+	M3d1c4l_*
+
+
+
+
+
+
+
+
+
